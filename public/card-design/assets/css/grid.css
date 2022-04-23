@@ -1,45 +1,65 @@
-* {
-  box-sizing: border-box;
-}
-html {
-  /* border-box box model allows us to add padding and border to our elements without increasing their size */
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-html,
 main {
   height: 100%;
   display: grid;
 }
-main {
-  display: grid;
-  grid-template-areas:
-    "header" 120px
-    "article" 246px /
-    300px;
-  margin: 0;
-  align-content: center;
-  justify-content: center;
-  row-gap: 1em;
-  padding: 20px;
-}
-main :nth-child(1) {
+.header {
   grid-area: header;
 }
-
-/* main :nth-child(1) {
+.article {
+  grid-area: main;
+}
+/* define grid within grid #1*/
+.header {
   display: grid;
-  grid-template-areas:
-    "circle title"
-    "subtitle"
-    "icon";
+  grid-template-columns: 72px 72px 1fr;
+  grid-template-rows: 36px 36px;
+  padding: 24px;
+}
+/* defining grid within grid #2 */
+.article {
+  display: grid;
+  grid-template-columns: 373px 85px 12px 66px;
+  grid-template-rows: 160px 24px 32px;
+  padding: 24px;
+}
+/* placing items within grid #1 */
+/* .circle {
+  grid-row: 1, 3;
+  grid-column: 1, 2;
+}
+.title {
+  grid-area: 1, 2, 2, 3;
 } */
-header :nth-child(1) {
-  grid-area: "circle";
+
+@media screen and (min-width: 400px) {
+  main {
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+      "header" 120px
+      "article" 246px /
+      560px;
+    margin: 0;
+    align-content: center;
+    justify-content: center;
+    row-gap: 1em;
+    padding: 20px;
+  }
+  main:nth-child(1) {
+    grid-area: header;
+  }
+  main:nth-child(2) {
+    grid-area: article;
+  }
+
+  .image {
+    height: auto;
+    box-shadow: none;
+  }
 }
 @media screen and (min-width: 600px) {
   main {
+    display: grid;
     grid:
       "header" 120px
       "main" 246px /

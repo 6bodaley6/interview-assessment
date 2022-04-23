@@ -1,12 +1,19 @@
-html,
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #f5f5f5;
-  font-family: "Roboto", sans-serif;
 }
 
 /* card 1 */
-main :nth-child(1) {
+.header {
   background-color: #ffffff;
   box-shadow: 0px 20px 40px #00000065;
   border-radius: 5px;
@@ -21,7 +28,7 @@ main :nth-child(1) {
 .title {
   color: #222222;
   font-family: "Roboto", sans-serif;
-  size: 24;
+  font-size: 24;
   height: 28px;
   width: auto;
 }
@@ -38,30 +45,29 @@ main :nth-child(1) {
 /* end card 1 */
 
 /* card 2 */
-main :nth-child(2) {
+.article {
   background-color: #ffffff;
   box-shadow: 0px 20px 40px #00000065;
   border-radius: 5px;
 }
 
 .image {
-  max-width: 100%;
-  height: 100%;
+  max-width: 512px;
+  height: 160px;
   box-shadow: none;
 }
-#cancel-button {
+.cancel-button {
   background-color: #f5f5f5;
   font: #222222;
   box-shadow: none;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-#save-button {
+.save-button {
   background-color: #c90000;
-  font: #ffffff;
+  color: #ffffff;
   box-shadow: none;
   font-family: "Roboto", sans-serif;
-  border: none;
-  font-weight: bold;
+  font-size: 14px;
 }
 /* end card 2 */
