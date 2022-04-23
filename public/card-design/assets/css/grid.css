@@ -12,25 +12,31 @@ main {
   height: 100%;
   display: grid;
 }
-@media screen and (min-width: 100px) {
-  main {
-    display: grid;
-    grid-template-areas:
-      "header" 120px
-      "article" 246px /
-      300px;
-    margin: 0;
-    align-content: center;
-    justify-content: center;
-    row-gap: 1em;
-    padding: 20px;
-  }
-  .image {
-    max-width: 100%;
-    height: 160px;
-  }
-  header {
-  }
+main {
+  display: grid;
+  grid-template-areas:
+    "header" 120px
+    "article" 246px /
+    300px;
+  margin: 0;
+  align-content: center;
+  justify-content: center;
+  row-gap: 1em;
+  padding: 20px;
+}
+main :nth-child(1) {
+  grid-area: header;
+}
+
+/* main :nth-child(1) {
+  display: grid;
+  grid-template-areas:
+    "circle title"
+    "subtitle"
+    "icon";
+} */
+header :nth-child(1) {
+  grid-area: "circle";
 }
 @media screen and (min-width: 600px) {
   main {
