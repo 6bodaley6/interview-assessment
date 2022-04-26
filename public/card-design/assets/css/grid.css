@@ -1,3 +1,10 @@
+.flex-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-rows: 1fr 120px 264px 1fr;
