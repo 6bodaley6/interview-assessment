@@ -23,6 +23,13 @@
   grid-template-rows: 24px 1fr 1fr 24px;
   grid-template-columns: 24px 1fr 1fr 1fr 24px;
 }
+
+.grid-card-02 {
+  display: grid;
+  grid-template-rows: 24px 2fr 1fr 24px;
+  grid-template-columns: 24px 2fr 1fr 24px;
+}
+
 .image {
   height: 100%;
   box-shadow: none;
