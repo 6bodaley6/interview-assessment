@@ -73,3 +73,14 @@ body {
   font-size: 14px;
 }
 /* end card 2 */
+button,
+button:focus {
+  outline: none;
+  border: 1px solid transparent;
+}
+
+button:active {
+  outline: none;
+  background: transparent;
+  border: 1px #c90000;
+}
