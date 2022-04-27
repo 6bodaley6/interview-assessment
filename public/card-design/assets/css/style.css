@@ -64,6 +64,7 @@ body {
   box-shadow: none;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  border-radius: 5px;
 }
 .save-button {
   background-color: #c90000;
@@ -71,6 +72,7 @@ body {
   box-shadow: none;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  border-radius: 5px;
 }
 /* end card 2 */
 button,
