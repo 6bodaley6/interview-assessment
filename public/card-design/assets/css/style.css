@@ -32,6 +32,7 @@ body {
 .title {
   color: #222222;
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 .subtitle {
   color: #666666;
@@ -65,6 +66,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   border-radius: 5px;
+  font-weight: bold;
 }
 .save-button {
   background-color: #c90000;
