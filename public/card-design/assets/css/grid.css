@@ -17,6 +17,12 @@
 .grid-card-02 {
   grid-area: 3 / 2 / 4 / 4;
 }
+
+.grid-card-01 {
+  display: grid;
+  grid-template-rows: 24px 1fr 1fr 24px;
+  grid-template-columns: 24px 1fr 1fr 1fr 24px;
+}
 .image {
   height: 100%;
   box-shadow: none;
