@@ -17,7 +17,7 @@ body {
 }
 
 /* card 1 */
-.header {
+.grid-card-01 {
   background-color: #ffffff;
   box-shadow: 0px 20px 40px #00000065;
   border-radius: 5px;
@@ -37,6 +37,10 @@ body {
   color: #666666;
   font-family: "Roboto", sans-serif;
 }
+
+#edit-icon {
+  color: black;
+}
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
@@ -44,10 +48,16 @@ body {
 /* end card 1 */
 
 /* card 2 */
-.article {
+.grid-card-02 {
   background-color: #ffffff;
   box-shadow: 0px 20px 40px #00000065;
   border-radius: 5px;
+}
+
+.image {
+  background-color: #f5f5f5;
+  height: 100%;
+  box-shadow: none;
 }
 .cancel-button {
   background-color: #f5f5f5;
