@@ -1,5 +1,6 @@
 .flex-container {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +21,8 @@
 
 .grid-card-01 {
   display: grid;
-  grid-template-rows: 24px 1fr 1fr 24px;
-  grid-template-columns: 24px 72px 1fr 1fr 24px;
+  grid-template-rows: 24px 36px 36px 24px;
+  grid-template-columns: 24px 72px 24px 1fr 1fr 24px;
 }
 
 .grid-card-02 {
@@ -31,10 +32,24 @@
 }
 
 .circle {
-  grid-area: 2 / 2 / 3 / 4;
+  grid-area: 2 / 2 / 4 / 3;
 }
 
 .title {
+  grid-area: 2 / 4 / 3 / 5;
+  justify-self: start;
+  align-self: center;
+}
+.subtitle {
+  grid-area: 3 / 4 / 4 / 5;
+  padding: 5px;
+  justify-self: start;
+  align-self: center;
+}
+.edit-icon {
+  grid-area: 2 / 5 / 4 / 6;
+  justify-self: end;
+  align-self: center;
 }
 
 .image {
