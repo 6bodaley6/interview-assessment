@@ -21,13 +21,20 @@
 .grid-card-01 {
   display: grid;
   grid-template-rows: 24px 1fr 1fr 24px;
-  grid-template-columns: 24px 1fr 1fr 1fr 24px;
+  grid-template-columns: 24px 72px 1fr 1fr 24px;
 }
 
 .grid-card-02 {
   display: grid;
   grid-template-rows: 24px 2fr 1fr 24px;
   grid-template-columns: 24px 2fr 1fr 24px;
+}
+
+.circle {
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.title {
 }
 
 .image {
